@@ -170,5 +170,7 @@ function changeDirection(key) {
 
 startBtn.addEventListener('click', startGame);
 
+// Initialize state immediately so the user sees the snake
+initGame();
 // Initial Draw
 draw();
