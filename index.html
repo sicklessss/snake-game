@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>贪吃蛇 - Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="header">
+            <h1>SNAKE</h1>
+            <div class="score-board">
+                <span>Score: <span id="score">0</span></span>
+                <span>High Score: <span id="high-score">0</span></span>
+            </div>
+        </div>
+        
+        <canvas id="gameCanvas" width="400" height="400"></canvas>
+        
+        <div class="controls">
+            <button id="start-btn">开始游戏 / Start</button>
+            <p class="instruction">PC: 方向键控制 | Mobile: 点击屏幕区域</p>
+        </div>
+        
+        <div class="d-pad">
+            <button class="d-btn up" data-dir="ArrowUp">▲</button>
+            <div class="d-row">
+                <button class="d-btn left" data-dir="ArrowLeft">◀</button>
+                <button class="d-btn right" data-dir="ArrowRight">▶</button>
+            </div>
+            <button class="d-btn down" data-dir="ArrowDown">▼</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
